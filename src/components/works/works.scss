@@ -1,3 +1,80 @@
 .works{
     background-color: lightgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container{
+        height: 480px;
+        width: 150vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .item{
+            width: 1400px;
+            height: 100%;
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .left{
+                background-image: url("../../../public/assets/typing.JPG");
+                flex: 6;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .leftContainer{
+                    width: 90%;
+                    height: 70%;
+                    display: flex;
+                    flex-direction: column;
+
+                    .imgContainer{
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        margin: 1px;
+
+                        img{
+                            width: 50px;
+                            height: 50px;
+                            margin: 5px;
+                        }
+                    }
+                    h2{
+                        font-size: 40px;
+                    }
+                    p{
+                        font-size: 26px;
+                    }
+                    span{
+                        font-size: 24px;
+                        font-weight: 600;
+                        text-decoration: underline;
+                    }
+
+                }
+            }
+            .right{
+                flex: 6;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: white;
+
+                img{
+                    width: 600px;
+                }
+            }
+
+        }
+    }
 }

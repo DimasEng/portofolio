@@ -42,14 +42,37 @@
             }
             h3{
                 font-size: 30px;
+
+                span{
+                    font-size: inherit;
+                    color: crimson;
+                }
+
+                .ityped-cursor{
+                    animation : blink 1s infinit;
+                }
+
+                @keyframes blink {
+                    50%{opacity: 1;}
+                    100%{opacity : 0;}
+
+                }
             }
         }
         a{
             position: absolute;
             bottom: 10px;
+            left: 50%;
 
             img{
-                width: 30px;
+                width: 60px;
+                animation: arrowBlink 2s infinite;
+            }
+
+            @keyframes arrowBlink {
+                100% {
+                    opacity : 0;
+                }
             }
         }
     }
